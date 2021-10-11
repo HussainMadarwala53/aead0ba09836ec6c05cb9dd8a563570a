@@ -10,12 +10,18 @@ class Block{
         this.body = Bodies.rectangle(x, y, width, height, options);
         this.width = width;
         this.height = height;
+   this.Visiblity = 255;
+
         World.add(world, this.body);
       }
       display(){
         var angle = this.body.angle;
         var pos= this.body.position;
         push();
+        this.Visiblity = this.Visiblity - 5;
+        this.Visiblity = this.x
+        this.Visiblity = this.body.position.x
+
         translate(pos.x, pos.y);
         rotate(angle);
         rectMode(CENTER);
